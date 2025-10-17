@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tymshare - Proveedor de Servicios Remotos</title>
+
+    <style>
+        /* === ESTILOS GENERALES === */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #cfe9ff, #e8f3ff);
+            color: #03396c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* === CONTENEDOR PRINCIPAL === */
+        .container {
+            background: #ffffffcc;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* === TITULOS === */
+        h1 {
+            color: #014f86;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            animation: slideDown 1s ease-out;
+        }
+
+        h2 {
+            color: #0466c8;
+            margin-bottom: 25px;
+            animation: slideDown 1.2s ease-out;
+        }
+
+        /* === IMAGEN === */
+        img {
+            width: 60%;
+            max-width: 400px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeZoom 1.8s ease-in-out;
+        }
+
+        /* === PARRAFOS === */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #023e8a;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* === ENLACE SIGUIENTE EVENTO === */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #0077b6;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        a:hover {
+            background: #00b4d8;
+            transform: scale(1.05);
+        }
+
+        /* === ANIMACIONES === */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideDown {
+            from {transform: translateY(-30px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        @keyframes fadeZoom {
+            from {transform: scale(0.8); opacity: 0;}
+            to {transform: scale(1); opacity: 1;}
+        }
+
+        /* === DECORACIÓN ANIMADA DE FONDO === */
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .bubbles span {
+            position: absolute;
+            bottom: -150px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 119, 182, 0.3);
+            border-radius: 50%;
+            animation: bubbles 10s infinite ease-in;
+        }
+
+        .bubbles span:nth-child(1) { left: 10%; animation-duration: 12s; }
+        .bubbles span:nth-child(2) { left: 25%; animation-duration: 10s; }
+        .bubbles span:nth-child(3) { left: 40%; animation-duration: 14s; }
+        .bubbles span:nth-child(4) { left: 55%; animation-duration: 9s; }
+        .bubbles span:nth-child(5) { left: 70%; animation-duration: 13s; }
+        .bubbles span:nth-child(6) { left: 85%; animation-duration: 11s; }
+
+        @keyframes bubbles {
+            0% { transform: translateY(0) scale(1); opacity: 0.5; }
+            100% { transform: translateY(-1000px) scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bubbles">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container">
+        <h1>Proveedor de Servicios Remotos: Tymshare</h1>
+        <h2>1964</h2>
+        <img src="tym.png" aLt="Tymshare Logo o Computadora Antigua">
+        <p>
+            En 1964 se fundó <b>Tymshare</b>, una de las primeras empresas en ofrecer
+            servicios de <i>time-sharing</i> o tiempo compartido, lo que permitía que varios
+            usuarios accedieran de forma remota a una misma computadora central.
+        </p>
+
+        <p>
+            Tymshare fue pionera en el desarrollo de tecnologías que sentaron las bases
+            de la <b>computación remota</b> y más tarde de la <b>computación en la nube</b>.
+            Años después, creó la red <b>Tymnet</b>, que conectaba terminales en todo el mundo
+            con sus sistemas centrales.
+        </p>
+
+        <a href="siguiente_evento.html">Siguiente evento</a>
+    </div>
+
+</body>
+</html>
